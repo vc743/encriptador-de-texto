@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&family=Silkscreen:wght@400;700&display=swap');
+
+:root{
+    --lightGreen: #22C55E;
+    --darkestBlue: #0F172A;
+    --darkBlue: #27375E;
+    --lightGrey: #ABB8C9;
+    --light: #E1E6EB;
+    --lightest: #FFFFFF;
+    --Red: #a51818;
+    --hello: #1d2948;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Radio Canada', sans-serif;
+    background-color: var(--light);
+    transition: all 0.4s ease;
+}
+
+header {
+    border-bottom: 2px solid var(--lightGrey);
+}
+
+main{
+    padding: 1.5rem 0;
+}
+
+img{
+    max-width: 25%;
+}
+
+footer{
+    margin: 2rem 0 0 0;
+    padding: 1.188rem 2rem 1.25rem 2rem;
+    background-color: #040c20;
+    color: var(--lightest);
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    width: 100%;
+}
+
+.col + .col {
+    margin-left: 30px;
+}
+
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-title{
+    font-family: "Silkscreen", sans-serif;
+}
+
+.icon{
+    font-size: 1.5em;
+    cursor: pointer;
+    color: var(--lightGrey);
+    transition: all 0.6s ease;
+}
+
+.user-input{
+    width: 100%;
+    padding: 0.5rem;
+    color: var(--darkBlue);
+    outline: none;
+    resize: none;
+    border: 1px solid var(--lightGrey);
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.warning{
+    color: var(--Red);
+}
+
+.results-container{
+    text-align: center;   
+}
+
+.btn-container{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn{
+    color: var(--lightest);
+    background-color: var(--lightGreen);
+    border-radius: 0.375rem;
+    border: none;
+    font-weight: bold;
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 1rem;
+    padding: 0.875em 1.25em;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.btn:hover{
+    color: var(--darkestBlue);
+    background-color: var(--lightest);
+}
+
+.attribution{
+    text-align: center;
+}
+
+.accent-color{
+    color: var(--lightGreen);
+}
+
+.footer-icons{
+    font-size: 1.5rem;
+    color: var(--lightest);
+}
+
+.footer-icons:hover{
+    color: var(--lightGrey);
+    transition: all ease 0.2s;
+}
+
+.hide{
+    display: none;
+}
+
+@media (max-width: 800px){
+    
+    .row {
+        flex-direction: column;
+    }
+
+    .col + .col{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    img{
+        display: none;
+    }
+
+    .btn + .btn{
+        margin-top: 5px;
+    }
+
+}
+
+@media (max-width: 520px){
+
+    .userInput{
+        height: 100px;
+    }
+
+}
+
+
+/*DARK MODE STYLES*/
+
+.body-dark-mode{
+    background-color: var(--darkestBlue);
+    transition: all 0.6s ease;
+}
+
+.main-title-dark-mode{
+    color: var(--lightGreen);
+}
+
+.user-input-dark-mode{
+    background-color: var(--darkestBlue);
+    color: var(--lightest);
+    transition: all 0.3s ease;
+}
+
+.message-not-found-dark-mode,
+.encrypted-text-dark-mode{
+    color: var(--lightest);
+}
