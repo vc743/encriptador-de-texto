@@ -27,7 +27,11 @@ header {
 }
 
 main{
-    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 img{
@@ -35,7 +39,7 @@ img{
 }
 
 footer{
-    margin: 2rem 0 0 0;
+    /* margin: 2rem 0 0 0; */
     padding: 1.188rem 2rem 1.25rem 2rem;
     background-color: #040c20;
     color: var(--lightest);
