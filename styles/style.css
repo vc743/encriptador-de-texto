@@ -39,6 +39,10 @@ img{
 }
 
 footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     padding: 1.188rem 2rem 1.25rem 2rem;
     background-color: #040c20;
     color: var(--lightest);
@@ -128,9 +132,9 @@ footer{
     background-color: var(--lightest);
 }
 
-.attribution{
+/* .attribution{
     text-align: center;
-}
+} */
 
 .accent-color{
     color: var(--lightGreen);
